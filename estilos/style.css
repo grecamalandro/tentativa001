@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #DAE1E7;
+    --cor1: #7DF5EF;
+    --cor2: #8AC2BF;
+    --cor3: #3F5C5A;
+    --cor4: #193332;
+    --cor5: #7F8F8E;
+
+    --fonte-destaque: 'Bebas Neue',cursive;
+    --fonte-padrao: Arial, Helvetica, Verdana, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor5);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+header h1 {
+    font-family: var(--fonte-destaque);
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+nav a:hover {
+    background-color: var(--cor4);
+    border-radius: 7px;
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 1000px;
+    text-align: justify;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); 
+    border-radius: 0px 0px 10px 10px;
+}
+main h2 {
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 1.5em;
+    text-indent: 8px;
+    font-weight: normal;
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+aside {
+    background-color: var(--cor3);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+aside ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
